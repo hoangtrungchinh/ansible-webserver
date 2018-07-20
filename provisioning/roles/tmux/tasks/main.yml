@@ -1,0 +1,8 @@
+---
+# tasks file for tmux
+
+- name: Install tmux
+  apt:
+    name: tmux
+    state: present
+      

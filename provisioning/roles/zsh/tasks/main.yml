@@ -1,0 +1,8 @@
+---
+# tasks file for tmux
+
+- name: Install zsh
+  apt:
+    name: zsh
+    state: present
+      

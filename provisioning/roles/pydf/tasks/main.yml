@@ -1,0 +1,8 @@
+---
+# tasks file for pydf
+
+- name: Install pydf
+  apt:
+    name: pydf
+    state: present
+      
