@@ -1,8 +1,13 @@
 ---
 # tasks file for pydf
 
-- name: Install pydf
+- name: Install pip
+  become: yes
   apt:
+    name: python-pip
+    state: present
+
+- name: Install pydf
+  pip:
     name: pydf
     state: present
-      

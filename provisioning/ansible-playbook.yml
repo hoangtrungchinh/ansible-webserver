@@ -1,11 +1,10 @@
 ---
-    # - base
-    # - htop
-    # - tmux
-    # - zsh
-    # - pydf
 
 - hosts: all
-  become: yes
   roles:
+    - base
+    - htop
+    - pydf
+    - tmux
+    - zsh
     - zsh-autosuggestions

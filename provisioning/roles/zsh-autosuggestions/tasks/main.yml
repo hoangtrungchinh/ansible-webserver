@@ -2,7 +2,6 @@
 # tasks file for zsh-autosuggestions 
 
 - name: Cloning oh-my-zsh
-  become: no
   git:
     repo=https://github.com/robbyrussell/oh-my-zsh
     dest=~/.oh-my-zsh
@@ -15,7 +14,6 @@
     dest=~/.zshrc
 
 - name: zsh-autosuggestions
-  become: no
   git:
     repo=https://github.com/zsh-users/zsh-autosuggestions
     dest=~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -23,7 +21,11 @@
 
 - replace:
     path: ~/.zshrc
-    regexp: '^  git'
-    replace: '^  git zsh-autosuggestions'
-    backup: yes
+    regexp: '  git'
+    replace: '  git zsh-autosuggestions'
+
+- replace:
+    path: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+    regexp: 'fg=8'
+    replace: 'fg=blue'
 

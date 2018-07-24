@@ -1,3 +1,4 @@
-- name: aptget update
+- name: apt get update
+  become: yes
   apt:
     update_cache: yes

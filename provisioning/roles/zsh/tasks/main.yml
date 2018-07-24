@@ -2,6 +2,7 @@
 # tasks file for tmux
 
 - name: Install zsh
+  become: yes
   apt:
     name: zsh
     state: present
