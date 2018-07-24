@@ -3,29 +3,28 @@
 
 - name: Cloning oh-my-zsh
   git:
-    repo=https://github.com/robbyrussell/oh-my-zsh
-    dest=~/.oh-my-zsh
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
   register: cloning
 
   # check lai
 - name: Creating new ~/.zshrc
   copy:
-    src=~/.oh-my-zsh/templates/zshrc.zsh-template
-    dest=~/.zshrc
+    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: ~/.zshrc
 
 - name: zsh-autosuggestions
   git:
-    repo=https://github.com/zsh-users/zsh-autosuggestions
-    dest=~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  register: cloning
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    update: no
 
 - replace:
     path: ~/.zshrc
-    regexp: '  git'
+    regexp: '^  git$'
     replace: '  git zsh-autosuggestions'
 
 - replace:
     path: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     regexp: 'fg=8'
     replace: 'fg=blue'
-

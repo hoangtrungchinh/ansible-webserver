@@ -25,6 +25,12 @@ mkdir -p  provisioning/roles/zsh-autosuggestions/tasks
 touch  provisioning/roles/zsh-autosuggestions/tasks/main.yml
 
 postgres
+mkdir -p  provisioning/roles/postgres/tasks
+touch  provisioning/roles/postgres/tasks/main.yml
+
+mysql
+mkdir -p  provisioning/roles/mysql/tasks
+touch  provisioning/roles/mysql/tasks/main.yml
 
 rvm
 ruby
