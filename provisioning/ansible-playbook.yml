@@ -10,5 +10,5 @@
     # - zsh
     # - zsh-autosuggestions
     # - postgresql
-    # - php
+    - php
     - mysql

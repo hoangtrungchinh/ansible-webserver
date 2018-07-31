@@ -52,6 +52,13 @@ mkdir -p  provisioning/roles/mysql/tasks
 
 touch  provisioning/roles/mysql/tasks/main.yml
 
+mkdir -p  provisioning/roles/mysql/vars/
+
+touch  provisioning/roles/mysql/vars//main.yml
+
+mkdir -p  provisioning/roles/mysql/templates
+
+touch provisioning/roles/mysql/templates/.my.cnf
 ---
 
 **rvm**
@@ -66,6 +73,8 @@ php
 mkdir -p  provisioning/roles/php/tasks
 
 touch  provisioning/roles/php/tasks/main.yml
+
+
 
 
 ruby
