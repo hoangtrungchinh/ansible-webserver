@@ -1,12 +1,14 @@
 ---
 
 - hosts: all
+  become: yes
   roles:
     - base
-    - htop
-    - pydf
-    - tmux
-    - zsh
-    - zsh-autosuggestions
-    - postgresql
+    # - htop
+    # - pydf
+    # - tmux
+    # - zsh
+    # - zsh-autosuggestions
+    # - postgresql
+    # - php
     - mysql

@@ -2,6 +2,7 @@
 # tasks file for tmux
 
 - name: Install tmux
+  become: no
   apt:
     name: tmux
     state: present

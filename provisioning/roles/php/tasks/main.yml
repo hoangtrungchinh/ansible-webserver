@@ -1,0 +1,13 @@
+---
+# tasks file for rvm
+
+- name: Install PHP
+  apt: name={{item}} state=installed
+  with_items:
+  - php
+  - php-fpm
+  - php-mysql
+  - php-xml
+  
+- name: Remove apache2
+  apt: name=apache2 state=removed

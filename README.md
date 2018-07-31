@@ -1,43 +1,89 @@
-# ansible-webserver
+# How To Use
 
-htop
+# How to create this project
+
+**htop**
+
 mkdir -p  provisioning/roles/htop/tasks
+
 touch  provisioning/roles/htop/tasks/main.yml
 
-tmux
+
+
+**tmux**
+
 mkdir -p  provisioning/roles/tmux/tasks
+
 touch  provisioning/roles/tmux/tasks/main.yml
 
-zsh
+**zsh**
+
 mkdir -p  provisioning/roles/zsh/tasks
+
 touch  provisioning/roles/zsh/tasks/main.yml
 
-apt
+**apt**
+
 mkdir -p  provisioning/roles/base/tasks
+
 touch  provisioning/roles/base/tasks/main.yml
 
-pydf
+**pydf**
+
 mkdir -p  provisioning/roles/pydf/tasks
+
 touch  provisioning/roles/pydf/tasks/main.yml
 
-zsh-autosuggestions
+**zsh**-autosuggestions
+
 mkdir -p  provisioning/roles/zsh-autosuggestions/tasks
+
 touch  provisioning/roles/zsh-autosuggestions/tasks/main.yml
 
-postgres
+**postgres**
+
 mkdir -p  provisioning/roles/postgres/tasks
+
 touch  provisioning/roles/postgres/tasks/main.yml
 
-mysql
+**mysql**
+
 mkdir -p  provisioning/roles/mysql/tasks
+
 touch  provisioning/roles/mysql/tasks/main.yml
 
-rvm
+---
+
+**rvm**
+
+mkdir -p  provisioning/roles/rvm/tasks
+
+touch  provisioning/roles/rvm/tasks/main.yml
+
+
+php
+
+mkdir -p  provisioning/roles/php/tasks
+
+touch  provisioning/roles/php/tasks/main.yml
+
+
 ruby
+
 rails
+
 nvm
+
 nodejs
 
+
+
 reddis
+
 elastic search
+
 nginx/apache
+
+monitor
+
+

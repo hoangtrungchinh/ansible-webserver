@@ -2,7 +2,6 @@
 # tasks file for pydf
 
 - name: Install pip
-  become: yes
   apt:
     name: python-pip
     state: present

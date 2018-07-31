@@ -2,7 +2,6 @@
 # tasks file for htop
 
 - name: Install htop
-  become: yes
   apt:
     name: htop
     state: present
