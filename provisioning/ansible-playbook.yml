@@ -7,9 +7,10 @@
     # - htop
     # - pydf
     # - tmux
-    # - zsh
-    # - zsh-autosuggestions
+    - zsh
+    - zsh-autosuggestions
     # - postgresql
-    # - mysql
+    - mysql
     - php
     - nginx
+    - wordpress

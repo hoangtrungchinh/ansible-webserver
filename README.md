@@ -91,6 +91,19 @@ mkdir -p  provisioning/roles/nginx/templates
 touch provisioning/roles/nginx/templates/default
 
 
+
+wordpress
+
+mkdir -p  provisioning/roles/wordpress/tasks
+
+touch  provisioning/roles/wordpress/tasks/main.yml
+
+mkdir -p  provisioning/roles/wordpress/templates
+
+touch provisioning/roles/wordpress/templates/wp-config.php 
+
+
+
 ruby
 
 rails
