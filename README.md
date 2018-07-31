@@ -76,6 +76,20 @@ touch  provisioning/roles/php/tasks/main.yml
 
 
 
+nginx
+
+mkdir -p  provisioning/roles/nginx/tasks
+
+touch  provisioning/roles/nginx/tasks/main.yml
+
+mkdir -p  provisioning/roles/nginx/vars/
+
+touch  provisioning/roles/nginx/vars//main.yml
+
+mkdir -p  provisioning/roles/nginx/templates
+
+touch provisioning/roles/nginx/templates/default
+
 
 ruby
 
