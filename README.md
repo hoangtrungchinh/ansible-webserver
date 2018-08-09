@@ -106,6 +106,16 @@ touch provisioning/roles/wordpress/templates/wp-config.php
 
 ruby
 
+mkdir -p  provisioning/roles/ruby/tasks
+
+touch  provisioning/roles/ruby/tasks/main.yml
+
+
+mkdir -p  provisioning/roles/ruby/vars/
+
+touch  provisioning/roles/ruby/vars//main.yml
+
+
 rails
 
 nvm

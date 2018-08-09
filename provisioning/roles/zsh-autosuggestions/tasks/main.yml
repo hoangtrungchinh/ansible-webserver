@@ -38,3 +38,4 @@
     line: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=blue'"
     state: present
     backrefs: yes
+    
