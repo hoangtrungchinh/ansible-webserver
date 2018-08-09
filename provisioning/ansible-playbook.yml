@@ -4,13 +4,12 @@
   become: yes
   roles:
     - base
-    # - htop
-    # - pydf
-    # - tmux
+    - htop
+    - pydf
+    - tmux
+    - mysql
     - zsh
     - zsh-autosuggestions
-    # - postgresql
-    - mysql
-    - php
+    - postgresql
     - nginx
-    - wordpress
+    

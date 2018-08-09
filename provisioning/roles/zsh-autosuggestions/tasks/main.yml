@@ -1,19 +1,18 @@
 ---
-# tasks file for zsh-autosuggestions 
 
 - name: Cloning oh-my-zsh
   become: no
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
     dest: ~/.oh-my-zsh
-  register: cloning
+    update: no
 
-  # check lai
 - name: Creating new ~/.zshrc
   become: no
   copy:
     src: ~/.oh-my-zsh/templates/zshrc.zsh-template
     dest: ~/.zshrc
+    force: no
 
 - name: zsh-autosuggestions
   become: no
@@ -22,12 +21,20 @@
     dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     update: no
 
-- replace:
+- name: replace plugin git = git zsh-autosuggestions
+  become: no
+  lineinfile:
     path: ~/.zshrc
     regexp: '^  git$'
-    replace: '  git zsh-autosuggestions'
+    line: '  git zsh-autosuggestions'
+    state: present
+    backrefs: yes
 
-- replace:
+- name: change color zsh
+  become: no
+  lineinfile:
     path: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    regexp: 'fg=8'
-    replace: 'fg=blue'
+    regexp: "^ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'$"
+    line: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=blue'"
+    state: present
+    backrefs: yes

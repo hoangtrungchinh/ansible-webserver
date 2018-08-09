@@ -123,3 +123,8 @@ nginx/apache
 monitor
 
 
+
+How to Encrypt password
+ansible-vault encrypt provisioning/roles/mysql/vars/main.yml
+password: changeit
+
